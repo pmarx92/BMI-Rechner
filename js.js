@@ -12,7 +12,7 @@ function calculateBmi() {
     if (bmi <= 18.5) {
         document.getElementById('messageHeading').innerText = "Untergewicht";
         document.getElementById('message').innerText = "Ihr Gewicht ist im Verhältnis zu Ihrer Körpergröße sehr niedrig. Idealerweise sollten Sie etwas zunehmen, um auf lange Sicht gesund und leistungsfähig zu bleiben.";
-    } else if (bmi => 18.5 && bmi <= 24.9) {
+    } else if (bmi >= 18.5 && bmi <= 24.9) {
         document.getElementById('messageHeading').innerText = "Normalgewicht";
         document.getElementById('message').innerText = "Der BMI zeigt bei Ihnen ein gesundes Verhältnis von Größe zu Gewicht an. Mit ausgewogener Ernährung und regelmäßiger Bewegung bleibt das auch langfristig so.";
     } else {
